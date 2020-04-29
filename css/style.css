@@ -172,9 +172,14 @@ p { margin-bottom: 1em;}
   font-weight: bolder;
 }
 
+#work_list {
+  width: 1000px;
+  margin: 0 auto;
+}
 #work_list > li {
   position: relative;
-  width: 386.66px; height: 380px;
+  /* width: 386.66px; height: 380px; */
+  width: 320px; height: 300px;
   overflow: hidden;
   margin-right: 20px;
   margin-bottom: 20px;
