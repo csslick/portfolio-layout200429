@@ -206,3 +206,29 @@ p { margin-bottom: 1em;}
 #work_list > li:hover img {
   transform: scale(1.2);
 }
+
+
+/* 서브페이지 */
+#work01 #works {
+  padding: 0;
+}
+#work01 #works .section_header{
+  background: #ccc;
+  background-image: url('http://placeimg.com/1200/200/tech/a');
+  height: 200px;
+}
+
+#work01 #works .section_header h2 { 
+  margin: 0; 
+  line-height: 200px;
+  color: #fff;
+  text-shadow: 2px 2px 2px #333;
+}
+#work01 #works .section_header h2 span {
+  font-size: 20px;
+}
+section article {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section article h2 { margin-bottom: 0.5em;}
