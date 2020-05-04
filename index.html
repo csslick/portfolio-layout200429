@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>웹퍼블리셔 홍길동의 홈페이지</title>
+  <!-- 제이쿼리 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <!-- 팬시박스(라이트박스) 플러그인 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <!-- 웹폰트 -->
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
   <!-- 내스타일 -->
@@ -73,7 +78,7 @@
     <ul id="work_list">
       <li>
         <a href="work01.html">
-          <img src="http://placeimg.com/387/387/tech/a" alt="작품이미지">
+          <img src="http://placeimg.com/387/387/tech/a" alt="프로젝트 작품(서브페이지)">
           <div class="info">
             <h4>투자자문 홈페이지</h4>
             <p>프로젝트 설명 요약글...</p>
@@ -81,8 +86,9 @@
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="http://placeimg.com/387/387/tech/b" alt="작품이미지">
+        <!-- 작품 이미지 팝업 -->
+        <a data-fancybox="gallery" href="http://placeimg.com/800/2000/tech/a">
+          <img src="http://placeimg.com/387/387/tech/b" alt="디자인작품(팝업)">
           <div class="info">
             <h4>작품 제목</h4>
             <p>여기에 작품 설명...</p>
@@ -90,8 +96,8 @@
         </a>
       </li>
       <li>
-        <a href="#">
-          <img src="http://placeimg.com/387/387/tech/c" alt="작품이미지">
+        <a data-fancybox="gallery" href="http://placeimg.com/800/800/tech/b">
+          <img src="http://placeimg.com/387/387/tech/c" alt="디자인작품(팝업)">
           <div class="info">
             <h4>작품 제목</h4>
             <p>여기에 작품 설명...</p>
