@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹퍼블리셔 홍길동의 홈페이지</title>
+  <!-- 제이쿼리 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <!-- 팬시박스(라이트박스) 플러그인 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <!-- 웹폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- 내스타일 -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- works -->
+  <section id="works">
+    <header class="section_header">
+      <span>projects</span>
+      <h2>MY WORKS</h2>
+    </header>
+    <nav>
+      <a href="#all">all</a>
+      <a href="#web">web design</a>
+      <a href="#graphic">graphic</a>
+      <a href="#uiux">uiux</a>
+    </nav>
+    <!-- 작품목록 -->
+    <ul id="work_list">
+      <li class="web">
+        <a href="work01.html">
+          <img src="http://placehold.it/387x387&text=web" alt="프로젝트 작품(서브페이지)">
+          <div class="info">
+            <h4>투자자문 홈페이지</h4>
+            <p>프로젝트 설명 요약글...</p>
+          </div>
+        </a>
+      </li>
+      <li class="web">
+        <a href="work01.html">
+          <img src="http://placehold.it/387x387&text=web" alt="프로젝트 작품(서브페이지)">
+          <div class="info">
+            <h4>투자자문 홈페이지</h4>
+            <p>프로젝트 설명 요약글...</p>
+          </div>
+        </a>
+      </li>
+      <li class="graphic">
+        <!-- 작품 이미지 팝업 -->
+        <a data-fancybox="gallery" href="http://placeimg.com/800/2000/tech/a">
+          <img src="http://placehold.it/387x387&text=design" alt="디자인작품(팝업)">
+          <div class="info">
+            <h4>작품 제목</h4>
+            <p>여기에 작품 설명...</p>
+          </div>
+        </a>
+      </li>
+      <li class="graphic">
+        <a data-fancybox="gallery" href="http://placeimg.com/800/800/tech/b">
+          <img src="http://placehold.it/387x387&text=design" alt="디자인작품(팝업)">
+          <div class="info">
+            <h4>작품 제목</h4>
+            <p>여기에 작품 설명...</p>
+          </div>
+        </a>
+      </li>
+      <li class="uiux">
+        <a href="#">
+          <img src="http://placehold.it/387x387&text=uiux" alt="uiux작품이미지">
+          <div class="info">
+            <h4>작품 제목</h4>
+            <p>여기에 작품 설명...</p>
+          </div>
+        </a>
+      </li>
+      <li class="uiux">
+        <a href="#">
+          <img src="http://placehold.it/387x387&text=uiux" alt="uiux작품이미지">
+          <div class="info">
+            <h4>작품 제목</h4>
+            <p>여기에 작품 설명...</p>
+          </div>
+        </a>
+      </li>
+      <li class="graphic">
+        <a href="#">
+          <img src="http://placehold.it/387x387&text=graphic" alt="graphic작품이미지">
+          <div class="info">
+            <h4>작품 제목</h4>
+            <p>여기에 작품 설명...</p>
+          </div>
+        </a>
+      </li>
+      <li class="graphic">
+        <a href="#">
+          <img src="http://placehold.it/387x387&text=graphic" alt="graphic작품이미지">
+          <div class="info">
+            <h4>작품 제목</h4>
+            <p>여기에 작품 설명...</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <script>
+
+    $(function(){
+      $('#works nav a').on('click', function(){
+        var cat_name = $(this).attr('href').slice(1);
+          if(cat_name == 'all') {
+            $('#work_list li').show(250);
+          } else {
+            $('#work_list li').hide(250).filter('.'+cat_name).show(250);
+          }
+        return false;
+      })
+    })
+  </script>
+</body>
+</html>
