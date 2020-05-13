@@ -232,3 +232,8 @@ section article {
   padding-bottom: 100px;
 }
 section article h2 { margin-bottom: 1em;}
+
+
+  #work_list_all > ul {
+      overflow: hidden;
+    }
