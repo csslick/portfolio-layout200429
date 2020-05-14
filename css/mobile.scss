@@ -1,14 +1,9 @@
 /* mobile.scss */
 /* 초기화 코드 불러오기 */
-@import url('./reset.css');
-
-/* 컬러 변수 선언 */
-$main-color: #fef200;
-$header-bg-color: #5d5d5d;
-$visual-box-color: #171717;
+@import './reset.scss';
 
 body {
-
+  color: $header-bg-color;
 }
 
 /* 헤더 및 gnb */

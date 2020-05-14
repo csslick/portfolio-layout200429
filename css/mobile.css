@@ -1,8 +1,37 @@
 @charset "UTF-8";
 /* mobile.scss */
 /* 초기화 코드 불러오기 */
-@import url("./reset.css");
+/* reset.scss */
+/* 모든 스타일에서 공통사용 */
 /* 컬러 변수 선언 */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+body {
+  color: #5d5d5d;
+}
+
 /* 헤더 및 gnb */
 #main_header {
   position: relative;
