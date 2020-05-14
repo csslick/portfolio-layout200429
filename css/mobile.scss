@@ -1,0 +1,46 @@
+/* mobile.scss */
+/* 초기화 코드 불러오기 */
+@import url('./reset.css');
+
+/* 컬러 변수 선언 */
+$main-color: #fef200;
+$header-bg-color: #5d5d5d;
+$visual-box-color: #171717;
+
+body {
+
+}
+
+/* 헤더 및 gnb */
+#main_header {
+  position: relative;
+  background: $visual-box-color;
+  width: 100%; 
+  height: 75px;
+  margin: 0 auto;
+  position: relative;
+}
+#main_gnb { display: none;}
+
+// 로고 타이틀
+#main_header > .logo > h1 > a {
+  outline: 1px solid red;
+  position: absolute;
+  font-size: 16px;
+  color: white;
+  line-height: 75px;
+  left: 20px; top: 0;
+  font-weight: bold;
+}
+
+// 토글버튼
+#btn_toggle {
+  position: absolute;
+  right: 20px; top: 25px;
+  background: none;
+  border: none;
+}
+#btn_toggle > .fa-bars {
+  color: #fff;
+  font-size: 22px;
+}

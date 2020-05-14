@@ -1,0 +1,22 @@
+/* reset.scss */
+/* 모든 스타일에서 공통사용 */
+/* 컬러 변수 선언 */
+// $main-color: #fef200;
+// $header-bg-color: #5d5d5d;
+// $visual-box-color: #171717;
+
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+a{ text-decoration: none;}
+ul { list-style-type: none;}
+body {
+  font-size: 18px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+p { margin-bottom: 1em;}
+
+
+
+

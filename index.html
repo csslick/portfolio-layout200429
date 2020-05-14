@@ -11,14 +11,20 @@
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <!-- 웹폰트 -->
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
-  <!-- 내스타일 -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- pc용 css -->
+  <link rel="stylesheet" href="./css/pc.css" media="screen and (min-width:768px)">
+  <!-- mobile용 css -->
+  <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:767px)">
 </head>
 <body>
   <header id="main_header">
      <div class="logo">
        <h1><a href="./">HONG GIL DONG.</a></h1>
      </div>
+     <button id="btn_toggle"><i class="fa fa-bars"></i></button>
      <nav id="main_gnb">
        <ul>
          <li><a href="./">home</a></li>

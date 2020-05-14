@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* mobile.scss */
+/* 초기화 코드 불러오기 */
+@import url("./reset.css");
+/* 컬러 변수 선언 */
+/* 헤더 및 gnb */
+#main_header {
+  position: relative;
+  background: #171717;
+  width: 100%;
+  height: 75px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#main_gnb {
+  display: none;
+}
+
+#main_header > .logo > h1 > a {
+  outline: 1px solid red;
+  position: absolute;
+  font-size: 16px;
+  color: white;
+  line-height: 75px;
+  left: 20px;
+  top: 0;
+  font-weight: bold;
+}
+
+#btn_toggle {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  background: none;
+  border: none;
+}
+
+#btn_toggle > .fa-bars {
+  color: #fff;
+  font-size: 22px;
+}
+/*# sourceMappingURL=mobile.css.map */
