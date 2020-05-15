@@ -141,7 +141,7 @@ body {
 
 #about > .about_left > img {
   position: relative;
-  width: 60%;
+  width: 50%;
   display: inline-block;
   -webkit-box-shadow: -40px -40px 1px #202020;
           box-shadow: -40px -40px 1px #202020;
