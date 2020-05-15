@@ -96,3 +96,59 @@ body {
   text-transform: uppercase;
   font-weight: bolder;
 }
+
+
+/* about */
+#about {
+  width: 100%;
+  padding-top: 100px;
+  background: #ececec;
+  overflow: hidden;
+}
+
+#about > .about_left {
+  position: relative;
+  width: 100%;
+  // outline: 1px solid red;
+  background-image: url('../images/shape01.png');
+  background-repeat: no-repeat;
+  background-position: 260px 470px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+#about > .about_left > .box {
+}
+#about > .about_left > img {
+  position: relative;
+  width: 60%;
+  display: inline-block;
+  box-shadow: -40px -40px 1px #202020;
+  left: 20px;
+}
+
+
+
+
+
+#about > .about_right {
+  width: 100%;
+  /* outline: 1px solid red;   */
+  padding-top: 50px;
+  border: 2px solid red;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 100px;
+}
+
+.section_header > span{ 
+  font-size: 24px;
+  font-weight: bolder;
+  /* background: #fef200; */
+  text-align: right;
+  padding-left: 50px;
+}
+.section_header > h2 {
+  font-size: 48px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
