@@ -22,6 +22,7 @@ ul {
 body {
   font-size: 18px;
   font-family: 'Nanum Gothic', sans-serif;
+  scroll-behavior: smooth;
 }
 
 p {
@@ -58,6 +59,7 @@ body {
 }
 
 #main_gnb {
+  display: none;
   background: #5d5d5d;
   position: relative;
   top: 75px;
