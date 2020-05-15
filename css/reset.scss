@@ -15,8 +15,9 @@ ul { list-style-type: none;}
 body {
   font-size: 18px;
   font-family: 'Nanum Gothic', sans-serif;
+  scroll-behavior: smooth;
 }
-p { margin-bottom: 1em;}
+p { margin-bottom: 1em; line-height: 1.6;}
 
 /* 각 섹션 영역의 공통 헤더 스타일 */
 .section_header {
