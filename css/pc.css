@@ -22,7 +22,6 @@ ul {
 body {
   font-size: 18px;
   font-family: 'Nanum Gothic', sans-serif;
-  scroll-behavior: smooth;
 }
 
 p {
@@ -78,6 +77,7 @@ p {
   padding-right: 20px;
   /* outline: 1px solid red; */
   margin-top: 25px;
+  display: block;
 }
 
 #main_gnb > ul > li {
