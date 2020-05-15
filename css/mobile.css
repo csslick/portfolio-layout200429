@@ -28,6 +28,21 @@ p {
   margin-bottom: 1em;
 }
 
+/* 각 섹션 영역의 공통 헤더 스타일 */
+.section_header > span {
+  font-size: 24px;
+  font-weight: bolder;
+  /* background: #fef200; */
+  text-align: right;
+  padding-left: 50px;
+}
+
+.section_header > h2 {
+  font-size: 48px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
 body {
   color: #5d5d5d;
 }
@@ -152,23 +167,77 @@ body {
   width: 100%;
   /* outline: 1px solid red;   */
   padding-top: 50px;
-  border: 2px solid red;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 100px;
 }
 
-.section_header > span {
-  font-size: 24px;
-  font-weight: bolder;
-  /* background: #fef200; */
-  text-align: right;
-  padding-left: 50px;
+/* 작품소개 */
+#works {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100px;
 }
 
-.section_header > h2 {
-  font-size: 48px;
+#works .section_header {
+  text-align: center;
+}
+
+#works .section_header > span {
+  padding-left: 160px;
+}
+
+#works > nav {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 80px;
+}
+
+#works > nav > a {
+  color: #202020;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+  text-transform: uppercase;
   font-weight: bolder;
-  margin-bottom: 50px;
+}
+
+#work_list {
+  width: 100%;
+}
+
+#work_list > li {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+  margin-bottom: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#work_list > li img {
+  width: 100%;
+}
+
+#work_list > li > a > .info {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  padding-top: 1em;
+}
+
+#work_list > li > a > .info h4 {
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+#work_list > li > a > .info p {
+  font-size: 16px;
+  color: #666;
 }
 /*# sourceMappingURL=mobile.css.map */
