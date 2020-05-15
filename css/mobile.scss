@@ -2,6 +2,9 @@
 /* 초기화 코드 불러오기 */
 @import './reset.scss';
 
+// 헤더 높이값
+$header_height: 75px;
+
 body {
   color: $header-bg-color;
 }
@@ -11,11 +14,32 @@ body {
   position: relative;
   background: $visual-box-color;
   width: 100%; 
-  height: 75px;
+  height: $header_height;
   margin: 0 auto;
   position: relative;
 }
-#main_gnb { display: none;}
+#main_gnb { 
+  // display: none;
+  background: $header-bg-color;
+  position: relative;
+  top: $header_height;
+  padding: 1em;
+  z-index: 999;
+}
+#main_gnb li {
+
+}
+#main_gnb li a { 
+  color: $font-color;
+  display: block;
+  padding: 0.4em;
+  color: #fff;
+}
+#main_gnb li a:hover {
+  // text-decoration: underline;
+  background: #ffffff;
+  color: $font-color;
+}
 
 // 로고 타이틀
 #main_header > .logo > h1 > a {
@@ -41,3 +65,34 @@ body {
 }
 
 
+/* 메인 비주얼 */
+#main_visual {
+  width: 100%; 
+  height: calc(100vh - 75px);
+  background: #ccc;
+  overflow: hidden;
+  background-image: url('../images/visual.jpg');
+  background-size: cover;
+}
+
+#main_visual > .left > .title {
+  position: absolute;
+  width: 80%; height: 100px;
+  background: $main-color;
+  left: calc(50% - 40%);
+  top: calc(50% - 50px);
+  padding: 20px;
+  color: #000;
+}
+#main_visual header h2 span{
+  display: block;
+}
+#main_visual header h2 span:first-child {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#main_visual header h2 span:last-child {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
